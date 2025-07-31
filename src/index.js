@@ -1,5 +1,5 @@
 import prompt from "prompt"
-import mainPrompt from "./prompts/prompt-main.js";
+import mainPrompt from "./promptsSchema/prompt-schema-main.js";
 import chalk from "chalk";
 import createQRCode from "./service/qr-code/create.js";
 import createPassword from "./service/password/create.js";
