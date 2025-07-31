@@ -61,3 +61,66 @@ Para solicitar a geração de uma senha dentro dos parâmetros definidos no arqu
 **LinkedIn**: www.linkedin.com/in/lorrannazareth/
 
 **E-mail:**: lorran.nazareth@gmail.com
+
+
+-----
+
+## Utilities for E-Commerce
+
+This backend application built with Node.js has the purpose of generating QR Codes and passwords directly in the terminal!
+
+## How to Run
+
+The application was developed using Node.js and its package manager, Node Package Manager (NPM).
+
+For convenience, to start the application, open the project directory and run the following commands:
+
+`npm i`
+
+`npm run start`
+
+If you wish to run the application and see the changes happening in real-time in the `index.js` file, you can also use the command `npm run start:dev` instead of `npm run start`.
+
+## Technologies Used
+
+This application uses the following technologies:
+
+| Technology   | Version |
+|--------------|---------|
+| NPM          | 10.9    |
+| Node         | 22.17   |
+| Chalk        | 5.4     |
+| Prompt       | 1.3     |
+| Qr-terminal  | 0.12    |
+
+## Features
+
+### QR Code Generation
+
+When the application starts and option **1** is selected, the user is asked to provide a valid link.
+
+After entering the link, the user is prompted to choose between generating a QR code directly in the terminal or a "normal" one. The basic difference lies in the size of the generated QR code and its transparency.
+
+Once an option is selected, a fully functional QR code is generated and displayed via terminal output.
+
+### Random Password Generation
+
+To generate passwords, the system accepts different parameters, all configurable via the `.env` file, with the following values:
+
+- **UPPERCASE_LETTERS** (boolean): enables or disables the use of uppercase letters in the generated passwords;
+
+- **LOWERCASE_LETTERS** (boolean): enables or disables the use of lowercase letters in the generated passwords;
+
+- **NUMBERS** (boolean): enables or disables the use of numbers in the generated passwords;
+
+- **SPECIAL_CHARACTERS** (boolean): enables or disables the use of special characters in the generated passwords;
+
+- **PASSWORD_LENGTH** (number): defines the total number of characters the password will have.
+
+To request password generation based on the parameters defined in the `.env` file, simply run the command `npm run start` and then select option **2**. After that, the randomly generated password will be displayed in the terminal.
+
+## Developer Contact
+
+**LinkedIn**: www.linkedin.com/in/lorrannazareth/
+
+**E-mail**: lorran.nazareth@gmail.com
