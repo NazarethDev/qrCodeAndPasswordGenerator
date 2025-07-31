@@ -9,7 +9,7 @@ async function handle(err, result) {
 
     const isSmall =  result.type == 2;
     qr.generate(result.link, {small: isSmall},(qrcode)=>{
-        console.log(chalk.green.bold("QR Code gerado com sucesso ✅\n"));
+        console.log(chalk.green.bold("QR Code generated successfully ✅\n"));
         console.log(qrcode);
     });
 

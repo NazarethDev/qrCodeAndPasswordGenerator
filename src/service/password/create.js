@@ -2,9 +2,9 @@ import chalk from "chalk";
 import handle from "./handle.js";
 
 async function createPassword() {
-    console.log(chalk.blue.bold("Password"));
+    console.log(chalk.green.bold("Password generated successfully ✅"));
     const password = await handle();
-    console.log(password);
+    console.log(chalk.yellowBright.bold(password));
 };
 
 export default createPassword;

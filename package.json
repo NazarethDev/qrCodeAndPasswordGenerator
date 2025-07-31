@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": " node --env-file=.env src/index.js",
-    "start:dev": "node src/index.js && node --watch src/index.js \" Projeto iniciado e assistido no terminal via --watch\""
+    "start:dev": "node --env-file=.env --watch src/index.js"
   },
   "author": "Lorran Nazareth",
   "license": "ISC",

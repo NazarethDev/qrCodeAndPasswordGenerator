@@ -3,13 +3,13 @@ import chalk from "chalk";
 const promptQRCode = [
     {
         name: "link",
-        description: chalk.yellow("Digite o link para geração do QR Code"),
+        description: chalk.yellow.bold("Enter the link to generate the QR Code"),
     },
     {
         name: "type",
-        description: chalk.yellow.bold("Escolha entre um tipo de QR Code (1 - normal ou 2 - terminal"),
+        description: chalk.yellow.bold.bold("Choose between a QR Code type (1 - normal or 2 - terminal)"),
         pattern: /^[1,2]+$/,
-        message: chalk.red.italic("Por favor, selecione entre a opção 1 ou 2 apenas"),
+        message: chalk.red.bold("Please select between option 1 or 2 only"),
         required: true
     },
 ];
