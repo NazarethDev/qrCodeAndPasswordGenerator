@@ -5,7 +5,7 @@
   "description": "Gerador de QR Code e senhas (utilidades para e-commerces) via terminal com node.js - projeto backend",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": " node --env-file=.env src/index.js",
     "start:dev": "node src/index.js && node --watch src/index.js \" Projeto iniciado e assistido no terminal via --watch\""
   },
   "author": "Lorran Nazareth",
